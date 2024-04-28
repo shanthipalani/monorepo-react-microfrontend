@@ -1,0 +1,43 @@
+{
+  "name": "container",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:start": "cd dist && PORT=8080 npx serve",
+    "start": "webpack serve --open --mode development",
+    "start:live": "webpack serve --open --mode development --live-reload --hot"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Shanthi Palani",
+    "email": "shanthipalani93@gmail.com"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "@mui/styled-engine": "^5.15.14",
+    "counter-dp": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
